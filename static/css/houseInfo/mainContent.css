@@ -1,0 +1,763 @@
+
+
+
+
+body{
+    background-color:rgb(249, 249, 249);
+}
+
+
+
+section.main-post {
+    /* border : 2px solid red; */
+    position: relative;
+    top: 260px;
+}
+
+
+section.main-post .container{
+    /* border: 2px solid green; */
+    width: var(--cont-size);
+    margin: 0 auto;
+    /* display */
+    display: flex;
+    justify-content:space-between;
+}
+
+/*  */
+
+.house-img-card{
+    border:2px solid #d3d3d3;
+    /* border:1.8px solid red; */
+    border-radius:10px;
+    width: 900px;
+    height: 540px;
+    overflow:hidden;
+    /* display */
+    display: flex;
+    align-items: center;
+    /* justify-content : center; */
+}
+
+.house-img-card > img{
+    width: 900px;
+    height: 100%;
+}
+
+
+.house-img-card .saved-icon{
+    position: absolute;
+}
+
+
+.house-img-card .left-icon , .house-img-card .right-icon{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    z-index: 1000;
+    background-color: #F8F8F8;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.184));
+    display: flex;
+    justify-content:center;
+    align-items : center;
+    cursor: pointer;
+    /*  */
+}
+
+
+.saved-icon{
+    width: 36px;
+    height:36px;
+    background-color: white;
+    border : 1px solid #5d5c5c;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:5px;
+    margin-left:705px;
+    margin-top:30px;
+    /* display */
+    display : none;
+}
+
+
+.house-img-card > .dir-btns{
+    position: absolute;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position */
+    margin: 0 auto;
+}
+
+
+.saved-icon svg{
+    width:23px;
+}
+
+path{
+    fill : #DE2D7B;
+}
+
+.house-img-card .right-icon{
+    margin-right:20px
+}
+
+
+.house-img-card .left-icon{
+    margin-left:20px;
+    position: relative;
+}
+
+
+
+/* Owner Card */
+
+
+
+.owner-card{
+    width: 300px;
+    height: 470px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color : #F2F2F2;
+    border-radius : 20px;
+}
+
+.owner-card .cont{
+    /* border:1px solid red; */
+    width: 207px;
+    height: 360px;
+    margin: 0 auto;
+    /* display */
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+}
+
+
+.image-user{
+    width: 70px;
+    height : 70px;
+    border-radius : 50%;
+    margin : 0 auto;
+    background-color : rgba(0, 0, 0, 0.793);
+    /* remove it */
+    margin-bottom : .5em;
+    overflow:hidden;
+    display: flex;
+    justify-content:center;
+    align-items : center;
+}
+
+.image-user img{
+    width: 70px;
+    height : 70px;
+}
+
+
+
+
+#username{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    text-align: center;
+    /* remove it */
+    margin-bottom : .5em;
+}
+
+
+#bio{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #828282;
+    cursor: context-menu;
+}
+
+
+.phone-num-btn{
+    width: 186px;
+    height: 54px;
+    background-color : var(--main-color);
+    border : none;
+    border-radius : 5px;
+    color : #F2F2F2;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    margin-bottom : 1em;
+    cursor: pointer;
+}
+
+
+.phone-num-btn > img{
+    margin-right : .5em;
+}
+
+.chat-btn{
+    width: 186px;
+    height: 54px;
+    background-color : transparent;
+    border: 1px solid #333333;
+    border-radius : 5px;
+    color : #333333;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    cursor: pointer;
+}
+
+.chat-btn > img{
+    margin-right : .5em;
+}
+
+.buttons{
+    /* border : 2px solid red; */
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1520px) {  
+    section.main-post .container {
+        /* border: 2px solid green; */
+        width: 1224px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media screen and (max-width: 1400px) {  
+    
+
+    section.main-post {
+        /* border : 2px solid red; */
+        position: relative;
+        top: 250px;
+    }
+
+
+    .house-img-card > .dir-btns{
+        /* border: 2px solid green; */
+        position: absolute;
+        width: 746px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* position */
+        margin: 0 auto;
+    }
+    
+
+
+    section.main-post .container{
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: 0 auto;
+        /* display */
+        display: flex;
+        justify-content:space-between;
+    }
+    
+    .house-img-card{
+        /* border:1.8px solid red; */
+        border-radius:10px;
+        width: 750px;
+        height: 540px;
+        overflow:hidden;
+        /* display */
+        display: flex;
+    }
+
+    .house-img-card > img{
+        width: 900px;
+        height: 100%;
+    }
+
+    .owner-card{
+        border-radius : 10px;
+        /* border : 2px solid red; */
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {  
+    section.main-post {
+        position: relative;
+        top: 250px;
+    }
+
+
+    section.main-post .container{
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: 0 auto;
+        /* display */
+        display: flex;
+        justify-content:space-between;
+    }
+
+
+    .house-img-card > .dir-btns{
+        /* border: 2px solid green; */
+        position: absolute;
+        width: 620px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* position */
+        margin: 0 auto;
+    }
+
+
+    .house-img-card{
+        /* border:1.8px solid red; */
+        border-radius:10px;
+        width: 620px;
+        height: 500px;
+        overflow:hidden;
+        /* display */
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1150px) {  
+    .house-img-card > .dir-btns{
+        /* border: 2px solid green; */
+        position: absolute;
+        width: 80%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* position */
+        margin: 0 auto;
+    }
+
+
+    section.main-post {
+        position: relative;
+        top: 250px;
+    }
+    section.main-post .container{
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: 0 auto;
+        /* display */
+        display: flex;
+        flex-direction : column-reverse;
+        justify-content:space-between;
+    }
+    .house-img-card{
+        /* border:1.8px solid red; */
+        border-radius:10px;
+        width: 100%;
+        height: 500px;
+        overflow:hidden;
+        /* display */
+        display: flex;
+    }
+
+    /*  */
+
+    .owner-card{
+        width: 100%;
+        height: 140px;
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        background-color : transparent;
+        border-radius : 20px;
+        /* border:1px solid red; */
+    }
+    .owner-card .cont{
+        /* border:1px solid red; */
+        width: 100%;
+        height: 120px;
+        margin: 0;
+        /* display */
+        display : flex;
+        flex-direction : row;
+        justify-content : space-between;
+    }
+    #bio{
+        display : none;
+    }
+    .buttons{
+        margin-left : 2.5em;
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        /* border : 1px solid red; */
+    }
+
+    .phone-num-btn{
+        width: 186px;
+        height: 54px;
+        background-color : var(--main-color);
+        border : none;
+        border-radius : 5px;
+        color : #F2F2F2;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        margin-bottom : 0em;
+        margin-left : 1.8em;
+    }
+
+
+    .head-card{
+        /* border : 2px solid pink; */
+        display: flex;
+        align-items: center;
+    }
+
+    #username{
+        margin-left:1em;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {  
+    section.main-post {
+        position: relative;
+        top: 250px;
+    }
+    section.main-post .container{
+        width: 80%;
+        margin: 0 auto;
+        /* display */
+        display: flex;
+        flex-direction : column-reverse;
+        justify-content:space-between;
+    }
+
+    .house-img-card{
+        /* border:1.8px solid red; */
+        border-radius:10px;
+        width: 100%;
+        height: 400px;
+        overflow:hidden;
+        /* display */
+        display: flex;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {  
+    section.main-post {
+        position: relative;
+        top: 250px;
+    }
+    section.main-post .container{
+        /* border : 2px solid red; */
+        width: 80%;
+        margin: 0 auto;
+        /* display */
+        display: flex;
+        flex-direction : column-reverse;
+        justify-content:space-between;
+    }
+
+    .house-img-card{
+        /* border:1.8px solid red; */
+        border-radius:10px;
+        width: 100%;
+        height: 400px;
+        overflow:hidden;
+        /* display */
+        display: flex;
+    }
+
+    /* .phone-num-btn{
+        width: 160px;
+        height: 54px;
+        
+    }
+
+
+    .chat-btn{
+        width: 160px;
+        height: 54px;
+    } */
+    
+    .phone-num-btn{
+        width: 160px;
+        height: 54px;
+        
+    }
+    .chat-btn{
+        width: 120px;
+        height: 54px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {  
+    section.main-post {
+        /* border : 2px solid red; */
+        position: relative;
+        top: 250px;
+    }
+    section.main-post .container{
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: 0 auto;
+        /* display */
+        display: flex;
+        flex-direction : column-reverse;
+        justify-content:space-between;
+    }
+
+    .house-img-card{
+        /* border:1.8px solid red; */
+        border-radius:10px;
+        width: 100%;
+        min-width:350px;
+        min-height: 300px;
+        height: 100%;
+        overflow:hidden;
+        /* display */
+        display: flex;
+    }
+
+
+    .house-img-card > img{
+        width: 100%;
+        height: 100%;
+    }
+    .head-card{
+        /* border : 2px solid pink; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone-num-btn{
+        width: 160px;
+        height: 54px;
+        
+    }
+    .chat-btn{
+        width: 120px;
+        height: 54px;
+    }
+    #username{
+        margin-left:0em;
+    }
+
+    section.heading-post .container .fst-sec .post-headInfo h3 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    #dir-icon {
+        width: 35px;
+        height: 35px;
+        align-items: center;
+    }
+    #dir-icon img{
+        width: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {  
+    .house-img-card > .dir-btns{
+        position: absolute;
+        width:85%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* position */
+        margin: 0 auto;
+        margin-left: -1em;
+    }
+
+    section.main-post {
+        /* border : 2px solid red; */
+        position: relative;
+        top: 230px;
+    }
+    section.main-post .container{
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: 0 auto;
+        /* display */
+        display: flex;
+        flex-direction : column-reverse;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .house-img-card{
+        /* border:1.8px solid red; */
+        border-radius:10px;
+        width: 100%;
+        min-width:350px;
+        min-height: 300px;
+        height: 100%;
+        overflow:hidden;
+        /* display */
+        display: flex;
+    }
+
+
+    .house-img-card > img{
+        width: 100%;
+        height: 300px;
+        /* border: 2px solid red; */
+    }
+    .head-card{
+        /* border : 2px solid pink; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone-num-btn{
+        width: 160px;
+        height: 54px;
+        
+    }
+    .chat-btn{
+        width: 120px;
+        height: 54px;
+    }
+    #username{
+        margin-left:0em;
+    }
+
+    .owner-card{
+        height:200px;
+    }
+
+
+    .owner-card .cont{
+        /* border:1px solid red; */
+        width: 100%;
+        height: 120px;
+        /* display */
+        display : flex;
+        flex-direction : row;
+        justify-content : space-between;
+    }
+
+
+    .buttons{
+        margin-left : 4em;
+        /* margin-top : .8em; */
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        /* border : 1px solid red; */
+        /* border:1px solid red; */
+    }
+
+    .phone-num-btn{
+        width: 186px;
+        height: 54px;
+        margin-left: 0;
+        margin-bottom: .5em;
+    }
+    .chat-btn{
+        width: 186px;
+        height: 54px;
+    }
+
+
+    section#house-desc .container .description-text p{
+        
+    }
+}
+.house-img-card .left-icon.dis{
+    opacity:0.5;
+}
+.house-img-card .right-icon.dis{
+    opacity:0.5;
+}
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    .house-img-card > .dir-btns{
+        position: absolute;
+        width: 90%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        /* margin-left: -1em; */
+        /* border: 1px solid red; */
+    }
+
+    .phone-num-btn {
+        width: 144px;
+        height: 54px;
+        margin-left: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .chat-btn{
+        width: 144px;
+        height: 54px;
+    }
+
+
+    #username {
+        font-size: 15px;
+    }
+    .image-user {
+        width: 60px;
+        height: 60px;
+    }
+
+
+} 

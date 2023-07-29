@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dari</title>
+        <link rel="icon" href="/media/logo.png" type="image/icon type">
+        <!--  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/message.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navBar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/houseInfo/fotter.css' %}">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://kit.fontawesome.com/6fa4ec11e9.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+
+        <section class="app">
+            <div id="app">
+                <navbar-sec background="rgb(248 248 248)"></navbar-sec>
+                {% csrf_token %}
+                <login-card :csrfval="csrfValue"></login-card>
+            </div>
+        </section>
+
+
+        <script>
+            var dataTest = JSON.parse("{{data|escapejs}}")
+        </script>
+        <!-- Import Our App -->
+        <script src="{% static 'js/loginPage.js' %}"></script>
+        <!-- Import Our Component -->
+        <script src="{% static 'components/reusable_components/messageRequest.js' %}"></script>
+        <!-- Import Our Component NavBar -->
+        <script src="{% static 'components/reusable_components/navBarComponent.js' %}"></script>
+        <!-- Import Our Fotter Component -->
+        <script src="{% static 'components/reusable_components/fotter.js' %}"></script>
+        <!--  -->
+        <script src="{% static 'components/login/loginCard.js' %}"></script>
+        <!-- Mount Our App -->
+        <script>app.mount(".app")</script>
+        <!-- Import Our Animations -->
+        <script src="{% static 'animations/navBar.js' %}"></script>
+    </body>
+</html>

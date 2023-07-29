@@ -1,0 +1,95 @@
+
+
+
+
+
+.buttons{
+    /* border:2px solid red; */
+    width:100%;
+    position: relative;
+    margin-top: 50px;
+    /* display */
+    display: flex;
+    justify-content:space-between;
+}
+
+.buttons > p:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+.nxt-btn{
+    width:175px;
+    height: 60px;
+    border: none;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #4A3AFF;
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prv-btn{
+    width:175px;
+    height: 60px;
+    border: none;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+
+    border: 2px solid #828282;
+    /* filter: drop-shadow(0px 3px 12px rgba(74, 58, 255, 0.18)); */
+    border-radius: 5px;
+    background-color: transparent;
+    color: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prv-btn:disabled{
+    opacity:0.5;
+}
+
+
+
+
+.nxt-btn:disabled{
+    opacity:0.5;
+}
+
+
+
+
+@media (max-width:480px){
+    .prv-btn , .nxt-btn{
+        width:135px;
+        height: 60px;
+    }
+
+
+    .nxt-btn{
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,95 @@
+
+
+.step-four{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top: 3.5em;
+    margin-bottom: 6em;
+}
+
+
+#icon-msg{
+    color: #AEAEAE;
+    font-size: 50px;
+}
+
+
+
+.custom__image-container label h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4A3AFF;
+    margin-top:.3em;
+}
+
+
+
+
+input#add-single-img {
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    /* border:1px solid red; */
+}
+
+
+/* input#add-single-img {
+    opacity: 0;
+    height: 0;
+    position: absolute;
+} */
+
+
+.custom__image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: max-content;
+    /* border: 2px solid red; */
+    margin-top: 2em;
+}
+.custom__image-container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    cursor: pointer;
+    width: 178px;
+    height: 178px;
+    border: 2px dashed #4A3AFF;
+    border-radius: 5px;
+    object-fit: cover;
+
+    position: relative;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.custom__image-container img {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+h3.upload-img-not{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    text-align: center;
+
+}
+

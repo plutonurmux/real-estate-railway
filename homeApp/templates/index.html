@@ -1,0 +1,74 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dari</title>
+        <link rel="icon" href="/media/logo.png" type="image/icon type">
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/root.css' %}">
+        <link rel="stylesheet" href="{% static 'css/homePage/heroSection.css' %}">
+        <link rel="stylesheet" href="{% static 'css/homePage/notifySection.css' %}">
+        <link rel="stylesheet" href="{% static 'css/homePage/recommandation.css' %}">
+        <link rel="stylesheet" href="{% static 'css/homePage/mostViewdHouse.css' %}">
+        <link rel="stylesheet" href="{% static 'css/homePage/mostLikedHouse.css' %}">
+        <link rel="stylesheet" href="{% static 'css/homePage/loginOverlay.css' %}">
+        <!-- CSS COMPONENTS -->
+        <link rel="stylesheet" href="{% static 'css/components_style/messageOverlay.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/houseCard.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/fotter.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/Bigfotter.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navBar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navBar.css' %}">
+        <!-- Google Icons Link -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6fa4ec11e9.js" crossorigin="anonymous"></script>
+        <!-- Vue Js -->
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <!-- CSRF VALUE TOKEN -->
+            {% csrf_token %}
+            <navbar-sec background="rgba(31, 31, 31, 0.05)" progress_bar="true"></navbar-sec>
+            <hero-section></hero-section>
+            <recommandations-hero></recommandations-hero>
+            <most-viewd-house @login_card_activate="openLoginCard" :data="most_viewd_house"></most-viewd-house>
+            <most-liked-house @login_card_activate="openLoginCard" :data="liked_house_data"></most-liked-house>
+            <notify-section></notify-section>
+            <fotter-bigger></fotter-bigger>
+            <overlay-login v-if="showLoginCard" @closeoverlay="close_overlay"></overlay-login>
+        </div>
+        
+        <!-- Import Our App -->
+        <script src="{% static 'js/homePage.js' %}"></script>
+        <!-- Import Our Component -->
+        <script src="{% static 'components/homePage/recommandations.js' %}"></script>
+        <script src="{% static 'components/homePage/heroSection.js' %}"></script>
+        <script src="{% static 'components/homePage/notifySection.js' %}"></script>
+        <script src="{% static 'components/homePage/mostViewdhouse.js' %}"></script>
+        <script src="{% static 'components/homePage/mostLikedhouse.js' %}"></script>
+        <script src="{% static 'components/reusable_components/messageRequest.js' %}"></script>
+        <script src="{% static 'components/login/loginCard.js' %}"></script>
+        <script src="{% static 'components/homePage/overlayLogin.js' %}"></script>
+
+        <script src="{% static 'components/reusable_components/fotter.js' %}"></script>
+        <script src="{% static 'components/reusable_components/big_fotter.js' %}"></script>
+        <script src="{% static 'components/reusable_components/houseCard.js' %}"></script>
+        <script src="{% static 'components/reusable_components/houseCardNoData.js' %}"></script>
+        <script src="{% static 'components/reusable_components/navBarComponent.js' %}"></script>
+        <!-- Mount Our App -->
+        <script>app.mount("#app")</script>
+        <!-- Import Our Animations -->
+        <script src="{% static 'animations/navBar.js' %}"></script>
+    </body>
+</html>

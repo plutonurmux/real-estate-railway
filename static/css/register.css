@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #F8F8F8;
+}
+
+
+.register-card{
+    border: 1px solid #C0C0C0;
+    width: 450px;
+    height: 600px;
+    /*height: 600px;*/
+    border-radius: 5px;
+    margin: 0 auto;
+    /* position */
+    position: relative;
+    top: 160px;
+    background-color: white;
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+    margin-top:50px;
+}
+
+
+.register-card .card-container{
+    width: 80%;
+    height: 85%;
+    /* height: 80%; */
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+/*-------------*/
+
+
+.register-card .card-container .heading-card{
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: #4A3AFF;
+    margin: 0;
+}
+
+
+/*-------------*/
+
+
+input.nxt-btn{
+    padding: 1.5em 0;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #4A3AFF;
+    color: white;
+    cursor: pointer;
+}
+
+input#submit_register_btn.nxt-btn{
+    position: relative;
+    top: 15px;
+}
+
+
+input#submit_register_btn.nxt-btn:disabled{
+    background-color: #909090;
+}
+
+
+form .label{
+    margin-bottom: 20px;
+}
+
+form .label .labelName{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+
+form .label .input-box{
+    border: 2px solid #F2F2F2;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+}
+
+
+form .label #phone-input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+form .label .input-box input{
+    border: none;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+}
+
+
+form .label .input-box select{
+    border: none;
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    color: #828282;
+}
+
+
+input::placeholder{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #828282;
+}
+
+
+
+#usernameError , #passwordConftext , #phoneNumberError1 , #phoneNumberError2 , #phoneNumberError3 , #phoneNumberError4 , #phoneNumberError{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #626161;
+}
+
+p#privacy-info{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #828282;
+    position: relative;
+    top: -10px;
+}
+
+
+@media (max-width:1000px){
+    .register-card{
+        top: 160px;
+    }
+}
+
+
+
+
+@media (max-width:600px) {
+    .register-card .card-container .heading-card{
+        text-align: left;
+        align-self: flex-start;
+        position: relative;
+        margin-bottom:1em;
+    }
+    .register-card{
+        border: none;
+        width: 450px;
+        height: 470px;
+        position: relative;
+        top: 160px; 
+        background-color: transparent;
+    }
+    p.registerNotify{
+        text-align: left;
+    }
+    .heading-card{
+        margin-left: 18px;
+    }
+} 
+
+
+
+@media (max-width:460px) {
+    .register-card .card-container .heading-card{
+        text-align: left;
+        align-self: flex-start;
+        position: relative;
+        margin-bottom:1em;
+    }
+    .register-card{
+        border: none;
+        width: 400px;
+        height: 470px;
+        position: relative;
+        top: 160px; 
+        background-color: transparent;
+    }
+    
+} 
+
+
+
+
+
+@media (max-width:370px) {
+    .register-card{
+        width: 360px;
+        height: 420px;
+        top: 50px;
+        position: relative;
+        top: 160px; 
+    }
+}   

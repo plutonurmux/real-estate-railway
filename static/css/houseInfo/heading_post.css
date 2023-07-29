@@ -1,0 +1,406 @@
+
+
+#saveBtn{
+    padding: 1.2em 2.9em;
+    border: 3px solid #ededed;
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #ededed;
+    cursor: pointer;
+}
+
+
+section.heading-post{
+    width:100%;
+    /* border:2px solid red; */
+    /* Position */
+    position: relative;
+    top:200px;
+}
+section.heading-post .container{
+    max-width: var(--cont-size);
+    width:80%;
+    min-width:350px;
+    margin:0 auto;
+    height: 100%;
+    padding-bottom: 1.5em;
+    border-bottom:1px solid #E8E8E8;
+    /* display */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+section.heading-post .container .fst-sec{
+    /* border: 1px solid red; */
+    display:flex;
+    align-items: center;
+}
+section.heading-post .container .fst-sec .post-headInfo{
+    margin-left: 1.8em;
+}
+section.heading-post .container .fst-sec .post-headInfo h3{
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--pri-text-color);
+    margin-bottom: .5em;
+    cursor : context-menu;
+}
+section.heading-post .container .fst-sec .post-headInfo .location{
+    display: flex;
+    align-items: center;
+}
+section.heading-post .container .fst-sec .post-headInfo .location #location-place{
+    margin-left: .8em;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+    cursor : context-menu;
+}
+#dir-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color:#EAEAEA;
+    /* Display */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+}
+#share-ico{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color:#EAEAEA;
+    /* Display */
+    justify-content:center;
+    align-items: center;
+    /* display */
+    display: none;
+}
+#share-ico img{
+    width:20px;
+    height:20px;
+}
+
+
+
+@media (min-width: 600px){
+    section.heading-post .container{
+        width:80%;
+    }
+    
+    section.heading-post .container .fst-sec .post-headInfo h3{
+        font-size: 22px;
+    }
+
+
+    
+}
+@media (min-width: 1000px){
+    section.heading-post .container .fst-sec .post-headInfo h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    #saveBtn {
+        padding: 1.2em 2.9em;
+        border: 3px solid #ededed;
+        color: #333333;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        background: #ededed;
+    }
+}
+
+
+@media (max-width: 1000px){
+    #saveBtn {
+        display: none;
+    }
+}
+
+
+
+
+
+/*  */
+
+
+
+
+.overlay{
+    opacity: 1;
+    background-color: #1712457d;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .card{
+    width: 576px;
+    height: 576px;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius : 10px;
+}
+
+
+.overlay .card .container{
+    width: 80%;
+    height: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction:column;
+    /* justify-content:center; */
+    align-items: center;
+}
+
+
+
+.overlay .card .container img{
+    width:280px;
+    margin: 0 auto;
+}
+
+
+#attention{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 27px;
+    margin-top:1.3em;
+    color: #D61C1C;
+}
+
+
+
+#callUser{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 27px;
+    margin:1em 0;
+    font-size: 18px;
+}
+
+.overlay .card .container p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #828282;
+    margin-top:1.5em;
+}
+
+
+
+#call-btn  img{
+    width:20px;
+    margin-right: .8em;
+    margin-bottom: -.2em;
+}
+
+#call-btn{
+    width: 233px;
+    height: 80px;
+    border: none;
+    border-radius: var(--btn-brd-rd);
+    background-color:transparent;
+    border: 3px solid var(--main-color);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A3AFF;
+}
+
+
+
+@media (max-width:1300px){
+    .overlay .card {
+        width: 451px;
+        height: 479px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .overlay .card .container img{
+        width:195px;
+        margin: 0 auto;
+    }
+    #attention{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 27px;
+        margin-top:1.3em;
+        color: #D61C1C;
+    }
+    .overlay .card .container p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #828282;
+        margin-top: 1.5em;
+    }
+    #callUser {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 27px;
+        margin: 0.9em 0;
+        font-size: 18px;
+    }
+    #call-btn {
+        width: 233px;
+        height: 59px;
+        border: none;
+        border-radius: var(--btn-brd-rd);
+        background-color: transparent;
+        border: 3px solid var(--main-color);
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4A3AFF;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:750px){
+    #dir-icon{
+        display: none;
+    }
+    section.heading-post .container .fst-sec .post-headInfo {
+        margin-left: 0em;
+    }
+    .overlay .card {
+        width: 428px;
+        height: 486px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .overlay .card .container img{
+        width:207px;
+        margin: 0 auto;
+    }
+    #attention{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 27px;
+        margin-top: .4em;
+        color: #D61C1C;
+    }
+    .overlay .card .container p {
+        margin-top: 1.9em;
+    }
+    #callUser {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 27px;
+        margin: 0.9em 0;
+        font-size: 18px;
+    }
+    #call-btn {
+        width: 233px;
+        height: 59px;
+        border: none;
+        border-radius: var(--btn-brd-rd);
+        background-color: transparent;
+        border: 3px solid var(--main-color);
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4A3AFF;
+    }
+}
+
+
+button#saveBtn.likes{
+    background-color: #de2d7b1c;
+    border: 3px solid #f5e1e9;
+    color: #ea4c89;
+}
+
+button#saveBtn.likes::after{
+    content: "d";
+}
+
+
+
+
+
+@media (max-width:500px){
+    .overlay .card {
+        width: 390px;
+        height: 498px;
+    }
+
+    .overlay .card .container {
+        width: 74%;
+        height: 77%;
+    }
+
+    section.heading-post .container{
+        /* border: 1px solid green; */
+        max-width: var(--cont-size);
+        min-width: 310px;
+        width: 70%;
+    }
+
+    section.heading-post .container .fst-sec .post-headInfo .location #location-place{
+        margin-left: 0.8em;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        color: #828282;
+    }
+}

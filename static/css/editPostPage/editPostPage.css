@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: #F8F8F8;
+}
+
+
+section#creationPost{
+    position: relative;
+    top: 100px;
+    margin-bottom: 12em;
+}
+
+
+section#creationPost .container{
+    width:760px;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+}
+
+
+
+
+/* Heading Section */
+
+
+
+section#creationPost .container .heading-section{
+    border-bottom: 2px solid #e6e7ef;
+    padding:.5em 0;
+}
+
+.title{
+    position: relative;
+    top: 41px;
+}
+
+
+section#creationPost .container .heading-section .title h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #170F49;
+    padding:.5em 0;
+    margin-bottom: -0.1em;
+}
+
+
+section#creationPost .container .heading-section .title p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #6F6C90;
+}
+
+
+.progress{
+    margin-top: 3em;
+    /* border: 1px solid red; */
+    height: 90px;
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.step{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* Font */
+    font-family: 'DM Sans' , sans-serif;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #6F6C90;
+    background-color: #EFF0F6;
+}
+
+.bar{
+    width: 138px;
+    height: 8px;
+    background-color: #EFF0F6;
+    border-radius: 40px;
+}
+
+
+
+
+/* Media Queries */
+
+
+
+@media (max-width:950px){
+    section#creationPost{
+        position: relative;
+        top: 100px;
+    }
+    
+    
+    section#creationPost .container{
+        width:650px;
+        /* border: 1px solid green; */
+        margin: 0 auto;
+    }
+
+
+    .bar{
+        width: 118px;
+        height: 8px;
+        background-color: #EFF0F6;
+        border-radius: 40px;
+    }
+
+
+    .step{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:768px){
+    section#creationPost{
+        position: relative;
+        top: 100px;
+    }
+    section#creationPost .container{
+        width:500px;
+        margin: 0 auto;
+    }
+    .bar{
+        width: 80px;
+        height: 8px;
+        background-color: #EFF0F6;
+        border-radius: 40px;
+    }
+    .step{
+        width: 45px;
+        height: 45px;
+    }
+    section#creationPost .container .heading-section .title h2{
+        font-size: 23px;
+        margin-bottom: .4em;
+    }
+    section#creationPost .container .heading-section .title p{
+        font-size: 13px;
+    }
+    .progress{
+        margin-top: 2em;
+    }
+    section#creationPost .container .heading-section{
+        border-bottom: 2px solid #e6e7ef;
+        padding:0em 0;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+    section#creationPost{
+        position: relative;
+        top: 100px;
+    }
+    section#creationPost .container{
+        width:420px;
+        margin: 0 auto;
+    }
+    .bar{
+        width: 50px;
+        height: 8px;
+        background-color: #EFF0F6;
+        border-radius: 40px;
+    }
+    .step{
+        width: 40px;
+        height: 40px;
+    }
+    section#creationPost .container .heading-section .title p{
+        font-size: 12px;
+        width: 88%;
+        /* border:1px solid red; */
+        margin: 0 auto;
+    }
+    .progress{
+        margin-top: 1.5em;
+    }
+}
+
+
+
+
+
+@media (max-width:490px){
+    section#creationPost{
+        position: relative;
+        top: 100px;
+    }
+    section#creationPost .container{
+        width:320px;
+        margin: 0 auto;
+    }
+    .bar{
+        width: 40px;
+        height: 8px;
+        background-color: #EFF0F6;
+        border-radius: 40px;
+    }
+    .step{
+        width: 40px;
+        height: 40px;
+    }
+    section#creationPost .container .heading-section .title p{
+        font-size: 12px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .progress{
+        margin-top: 2em;
+    }
+}
+
+
+
+/*  */
+
+
+

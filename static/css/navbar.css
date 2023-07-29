@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    /* --- Configuration of Font Color ----*/
+    --main-color : #4A3AFF;
+    --pri-text-color: #333333;
+    --sec-text-color: #828282;
+    --thi-text-color: #BDBDBD;
+    --fou-text-color: #BDBDBD;
+    /*--- Configuration of Font Family Weight ----*/
+    --pri-font: 'Poppins';
+    --heading1-font-weight: 700;
+    --heading2-font-weight: 500;
+    --title-font-weight: 400;
+    --title-bold-weight: 600;
+    --para-font-weight: 400;
+    --para-bold-weight: 600;
+    /*--- Configuration of Font Family Size*/
+    --title-para-size: 16px;
+    /* Border radius Button */
+    --btn-brd-rd: 5px;
+    /* Button Size Padding */
+    --btn-pad-siz: 1em 2em;
+    
+}

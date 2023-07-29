@@ -1,0 +1,179 @@
+body {
+    background-color: #F8F8F8;
+    overflow-x: hidden;
+}
+
+
+body::-webkit-scrollbar{
+    width: 16px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #606060;
+}
+body::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: hsl(0,0%,67%);
+}
+
+
+
+section#hero{
+    background-color: #c9d8dd;
+    height: 100vh;
+    background-image: url("http://127.0.0.1:8000/media/BG%20image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+    font-family: sans-serif;
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Position */;
+    z-index: 1;
+}
+
+
+section#hero .hero-context{
+    width: 580px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+section#hero .hero-context h1{
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 117%;
+    text-align: center;
+    color: #333333;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
+.pri-btn{
+    width: 185px;
+    border: none;
+    height: 65px;
+    border-radius:5px;
+    background-color: var(--main-color);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F2F2F2;
+    margin: 0 auto;
+    margin-top: 1.8em;
+    cursor: pointer;
+}
+
+.pri-btn i{
+    margin-right: 1em;
+    font-size: 17px;
+}
+
+.material-symbols-outlined{
+    margin-right: .3em;
+}
+
+
+section#hero #shape{
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 40vh;
+}
+
+
+/*--------- Media Queries -----------*/
+
+
+@media screen and (max-width: 1100px) {  
+    section#hero .hero-context h1{
+        font-size: 44px;
+        width: 500px;
+    }
+
+    section#hero #shape{
+        width: 200px;
+        top: 50vh;
+    }
+}
+
+@media screen and (max-width: 992px) {  
+    section#hero .hero-context h1{
+        font-size: 44px;
+        width: 500px;
+    }
+
+    section#hero #shape{
+        width: 200px;
+        top: 50vh;
+    }
+}
+
+@media screen and (max-width: 600px) {  
+    section#hero .hero-context{
+        height: 260px;
+    }
+    section#hero #shape{
+        width: 170px;
+        top: 60vh;
+    }
+    section#hero .hero-context h1{
+        font-size: 33px;
+        width: 420px;
+    }
+}
+
+
+
+
+@media (max-width: 480px){
+    section#hero .hero-context{
+        width: 350px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    section#hero .hero-context h1{
+        font-family: var(--pri-font);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 117%;
+        text-align: center;
+        color: #333333;
+        width:300px;
+    }
+    .pri-btn{
+        padding: 1.2em 2.5em;
+        background-color: var(--main-color);
+        font-size: 12px;
+    }
+}
+
+

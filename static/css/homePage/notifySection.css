@@ -1,0 +1,113 @@
+
+
+
+
+
+section#notify-sec{
+    /* border:2px solid red; */
+    position: relative;
+    top: 200px;
+    margin-bottom: 25em;
+}
+
+
+
+section#notify-sec .container{
+    /* border: 2px solid green; */
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content:space-between;
+}
+
+
+section#notify-sec .container .heading h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+}
+
+
+section#notify-sec .container .heading p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #828282;
+    margin-top: .5em;
+}
+
+
+
+section#notify-sec .container #btn-list-estate{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #F2F2F2;
+    padding: 1em 3em;
+    border: none;
+    border-radius:5px;
+    background-color: #4A3AFF;
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 880px){
+    section#notify-sec .container{
+        /* border: 2px solid green; */
+        width: 400px;
+        height: 150px;
+    }
+    section#notify-sec .container .heading h2{
+        font-size: 19px;
+    }
+    section#notify-sec .container .heading p{
+        font-size: 12px;
+        margin-top: .8em;
+    }
+    section#notify-sec .container #btn-list-estate{
+        margin-top: 1.3em;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    section#notify-sec .container{
+        /* border: 2px solid green; */
+        width: 350px;
+        height: 150px;
+    }
+    section#notify-sec .container .heading h2{
+        font-size: 19px;
+    }
+    section#notify-sec .container .heading p{
+        font-size: 11px;
+        margin-top: .8em;
+    }
+    section#notify-sec .container #btn-list-estate{
+        margin-top: 1.3em;
+    }
+
+
+    section#notify-sec .container #btn-list-estate{
+        font-size: 12px;
+        padding: 1em 2em;
+    }
+}

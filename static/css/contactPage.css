@@ -1,0 +1,459 @@
+
+
+
+
+
+
+body::-webkit-scrollbar{
+    width: 16px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #606060;
+}
+body::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: hsl(0,0%,67%);
+}
+
+
+
+
+
+
+section#contactSection{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 20vh;
+    margin-bottom: 200px;
+}
+
+
+
+section#contactSection .container{
+    width: 961px;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+}
+
+/*  */
+
+section#contactSection .container .heading-post{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+
+section#contactSection .container .heading-post h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 53px;
+    color: #333333;
+}
+
+
+section#contactSection .container .heading-post img{
+    width: 50px;
+    position: relative;
+    top: 35px;
+    right: 250px;
+}
+
+
+/*  */
+
+
+
+section#contactSection .container form{
+    /* border: 1px solid red; */
+    margin-top: -1.5em;
+}
+
+
+
+section#contactSection .container form label{
+    margin-bottom: 1.4em;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+section#contactSection .container form label p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 10px;
+    color: #333333;
+    margin-bottom: 1em;
+}
+
+
+section#contactSection .container form .row{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content:space-between;
+}
+
+
+section#contactSection .container form .row .input-box{
+    /* border: 1px solid black; */
+    width: 458px;
+    padding: .7em 0;
+    border-radius: 2px;
+    border: 2px solid #F2F2F2;
+    background-color:#F2F2F2;
+    /* display */
+    display: flex;
+    justify-content:center;    
+}
+
+
+
+
+section#contactSection .container form .row .input-box input{
+    background: transparent;
+    width: 90%;
+    border: none;
+    outline: none;
+    color: #333333;
+}
+
+
+
+/*  */
+
+
+
+section#contactSection .container form .input-box{
+    border: 1px solid black;
+    width: 99.5%;
+    padding: .7em 0;
+    border-radius: 2px;
+    border: 2px solid #F2F2F2;
+    background-color:#F2F2F2;
+    /* display */
+    display: flex;
+    justify-content:center;    
+}
+
+
+section#contactSection .container form .input-box select{
+    background: transparent;
+    width: 96%;
+    border: none;
+    outline: none;
+    color: #333333;
+    cursor: pointer;
+}
+
+
+section#contactSection .container form .input-box textarea{
+    background: transparent;
+    width: 96%;
+    border: none;
+    outline: none;
+    color: #333333;
+    resize: none;
+}
+
+
+
+#pri{
+    width: 272px;
+    height: 54px;
+    left: 240px;
+    top: 874px;
+    background: #4A3AFF;
+    color: white;
+    border-radius: 2px;
+    border:none;
+    margin-top: .5em;
+    cursor: pointer;
+}
+
+
+#pri:disabled{
+    background: transparent;
+    color: #333333;
+    border: 2px solid #333333;
+}
+
+
+
+section#contactSection .container form .row .input-box.valide{
+    border: 2px solid #4A3AFF;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1400px) {
+    section#contactSection{
+        position: relative;
+        top: 20vh;
+    }
+    section#contactSection .container{
+        width: 850px;
+        margin: 0 auto;
+    }
+    section#contactSection .container .heading-post h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 47px;
+        color: #333333;
+    }
+    section#contactSection .container .heading-post img{
+        width: 41px;
+        position: relative;
+        top: 35px;
+        right: 224px;
+    }
+    section#contactSection .container form .row .input-box{
+        width: 405px;
+        padding: 0.7em 0;
+        border-radius: 2px;
+        border: 2px solid #F2F2F2;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+    }
+    #pri {
+        width: 236px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    section#contactSection{
+        /* border: 2px solid red; */
+        position: relative;
+        top: 20vh;
+        margin-bottom: 300px;
+    }
+    section#contactSection .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    section#contactSection .container .heading-post h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 47px;
+        color: #333333;
+    }
+    section#contactSection .container .heading-post img{
+        width: 41px;
+        position: relative;
+        top: 35px;
+        right: 224px;
+    }
+    section#contactSection .container form .row{
+        display: block;
+    }
+    section#contactSection .container form .row .input-box{
+        width: 100%;
+        padding: 0.7em 0;
+        border-radius: 2px;
+        border: 2px solid #F2F2F2;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+    }
+    #pri {
+        width: 236px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    section#contactSection .container .heading-post h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        color: #333333;
+        /* border: 1px solid red; */
+    }
+    section#contactSection .container .heading-post img {
+        width: 33px;
+        position: relative;
+        top: 26px;
+        right: 159px;
+    }
+    section#contactSection .container form label p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 10px;
+        color: #333333;
+    }
+    #pri {
+        width: 272px;
+        height: 54px;
+        left: 240px;
+        top: 874px;
+        background: #4A3AFF;
+        color: white;
+        border-radius: 2px;
+        border: none;
+        margin-top: 0;
+    }
+    section#contactSection .container form {
+        margin-top: 0em;
+    }
+
+
+    section#contactSection .container .heading-post{
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+    section#contactSection .container .heading-post h1 {
+        font-size: 35px;
+        /* border: 1px solid red; */
+    }
+
+    section#contactSection .container .heading-post img {
+        top: 23px;
+        right: 144px;
+    }
+
+    section#contactSection .container form label {
+        margin-bottom: 0.8em;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 550px){
+    section#contactSection .container .heading-post h1 {
+        font-size: 27px;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    section#contactSection .container .heading-post img {
+        top: 23px;
+        right: 144px;
+        display: none;
+    }
+    section#contactSection .container form label {
+        margin-bottom: 0.8em;
+    }
+}
+
+
+
+
+@media screen and (max-width: 430px){
+    section#contactSection .container .heading-post h1 {
+        font-size: 25px;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    section#contactSection .container .heading-post img {
+        width: 28px;
+        top: 23px;
+        right: 120px;
+    }
+
+    section#contactSection .container form label {
+        margin-bottom: 0.8em;
+    }
+    #pri {
+        width: 165px;
+        height: 54px;
+        margin-top: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 395px){
+    section#contactSection .container .heading-post h1 {
+        font-size: 23px;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    section#contactSection .container .heading-post img {
+        width: 26px;
+        top: 16px;
+        right: 110px;
+    }
+
+    #pri {
+        width: 165px;
+        height: 54px;
+        margin-top: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 300px){
+    section#contactSection .container .heading-post h1 {
+        font-size: 20px;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    section#contactSection .container .heading-post img {
+        width: 26px;
+        top: 16px;
+        right: 116px;
+        display: none;
+    }
+
+    #pri {
+        width: 165px;
+        height: 54px;
+        margin-top: 0;
+    }
+}

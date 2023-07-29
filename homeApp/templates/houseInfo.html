@@ -1,0 +1,75 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dari</title>
+        <link rel="icon" href="/media/logo.png" type="image/icon type">
+        <!--  -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/root.css' %}">
+        <link rel="stylesheet" href="{% static 'css/houseInfo/heading_post.css' %}">
+        <link rel="stylesheet" href="{% static 'css/houseInfo/mainContent.css' %}">
+        <link rel="stylesheet" href="{% static 'css/houseInfo/descriptionSection.css' %}">
+        <link rel="stylesheet" href="{% static 'css/houseInfo/recommandation.css' %}">
+        <link rel="stylesheet" href="{% static 'css/homePage/mostLikedHouse.css' %}">
+        <link rel="stylesheet" href="{% static 'css/accountSettings/message.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/fotter.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/houseCard.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navBar.css' %}">
+        <!-- Google Icons Link -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6fa4ec11e9.js" crossorigin="anonymous"></script>
+        <!-- Vue Js -->
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <navbar-sec background="transparent" progress_bar="true"></navbar-sec>
+            {% if messages %}
+                <div style="position:relative;top: 181px;display:flex;width: 80%;margin: 0 auto;">
+                    {% for message in messages %}
+                        <message-request hide="true" message="Your Post Created Successfully" status="success"></message-request>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <heading-section :title="payload.title" :location="payload.adress" :city="payload.city" :saved="payload.saved" :user_auth="payload.userAuth" @update_house="updateLikes"></heading-section>
+            <main-content @open-overlay="toggleOverlay" :images="payload.images" :owner_name="payload.owner.name" :owner_pic="payload.owner.profile_pic" :owner_bio="payload.owner.bio" :user_auth="payload.userAuth" :owner_chat="payload.owner.chat_info"></main-content>
+            <description-content :description="payload.description" :surface="payload.tsurface" :bedrooms="payload.bedroom" :toilettes="payload.toilettes" :other_details="payload.other_details" :category="payload.category" :floor="payload.floor" :rooms="payload.rooms" :salon="payload.salon" :price="payload.price" :city="payload.city" :address="payload.adress"></description-content>
+            <recommandtions-cont :data="recommandtion_data"></recommandtions-cont>
+            <fotter-sec test="400"></fotter-sec>
+            <overlay-sec @close-overlay="toggleOverlay" v-if="showPhoneNumber" :data="payload.owner"></overlay-sec>
+        </div>
+
+        <script>
+            var test_data = JSON.parse("{{data|escapejs}}")
+            console.log(test_data)
+            var rec_data = JSON.parse("{{recommandations|escapejs}}")
+        </script>
+        <!-- Import My App -->
+        <script src="{% static 'js/houseInfo.js' %}"></script>
+        <!-- Import My Component -->
+        <script src="{% static 'components/reusable_components/messageRequest.js' %}"></script>
+        <script src="{% static 'components/houseInfoPage/headingPost.js' %}"></script>
+        <script src="{% static 'components/houseInfoPage/mainPostContent.js' %}"></script>
+        <script src="{% static 'components/houseInfoPage/descriptioInfo.js' %}"></script>
+        <script src="{% static 'components/reusable_components/houseCard.js' %}"></script>
+        <script src="{% static 'components/houseInfoPage/recommandations.js' %}"></script>
+        <script src="{% static 'components/reusable_components/fotter.js' %}"></script>
+        <script src="{% static 'components/reusable_components/overlay.js' %}"></script>
+        <script src="{% static 'components/reusable_components/navBarComponent.js' %}"></script>
+        <script src="{% static 'components/contactPage/contactForm.js' %}"></script>
+        <!-- Mount Our App -->
+        <script>app.mount("#app")</script>
+        <!-- Import Our Animations -->
+        <script src="{% static 'animations/navBar.js' %}"></script>
+    </body>
+</html>

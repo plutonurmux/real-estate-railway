@@ -1,0 +1,45 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Dari</title>
+        <link rel="icon" href="/media/logo.png" type="image/icon type">
+        <!--  -->
+        <link rel="stylesheet" href="{% static 'css/message.css' %}">
+        <link rel="stylesheet" href="{% static 'css/register.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navBar.css' %}">
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+
+        <div id="app">
+            <navbar-sec background="rgb(248 248 248)"></navbar-sec>
+            {% csrf_token %}
+            <register-card :csrf_token="csrf_token"></register-card>
+        </div>
+
+
+        <!-- Import Our App -->
+        <script src="{% static 'js/registerPage.js' %}"></script>
+
+        <!-- Import Our Component -->
+        <script src="{% static 'components/reusable_components/messageRequest.js' %}"></script>
+        <script src="{% static 'components/register/registerCard.js' %}"></script>
+        <script src="{% static 'components/register/register_form_first_step.js' %}"></script>
+        <script src="{% static 'components/register/register_form_second_step.js' %}"></script>
+        <!-- Import Our Component NavBar -->
+        <script src="{% static 'components/reusable_components/navBarComponent.js' %}"></script>
+        <!-- Mount Our App -->
+        <script>app.mount("#app")</script>
+        <!-- Import Our Animations -->
+        <script src="{% static 'animations/navBar.js' %}"></script>
+    </body>
+</html>

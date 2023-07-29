@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+section#profile-info-user{
+    position: relative;
+    top: 275px;
+}
+
+
+section#profile-info-user .card-user{
+    /* width: 380px; */
+    width: 27.5%;
+    max-width: 380px;
+    min-width: 350px;
+    height: 366px;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+section#profile-info-user .card-user .user-prf-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    background: rgb(246, 246, 246);
+    overflow: hidden;
+    display: flex;
+    justify-content: center
+}
+
+
+
+section#profile-info-user .card-user h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+
+
+section#profile-info-user .card-user p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #828282;
+}
+
+
+section#profile-info-user .card-user .buttons-prf{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#profile-info-user .card-user .buttons-prf .btn_prf{
+    width: 45%;
+    height: 54px;
+    border: none;
+    border-radius: 5px;
+    /* Font */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+
+#phone_btn{
+    background: #4A3AFF;
+    color: white;
+}
+
+
+#chat_btn{
+    color: #333333;
+    border: 1.5px solid #333333 !important;
+    background: white;
+}
+
+
+button#chat_btn.btn_prf.disable{
+    color: #5d5d5d;
+    border: 1.5px solid #a9a9a9 !important;
+    background: #bfb4b433;
+}
+
+
+
+@media (max-width:900px){
+    section#profile-info-user .card-user{
+        height: 335px;
+    }
+
+    section#profile-info-user .card-user .user-prf-picture{
+        width: 85px;
+        height: 85px;
+    }
+
+    section#profile-info-user .card-user h2{
+        font-size: 15px;
+    }
+    
+    section#profile-info-user .card-user p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+@media (max-width:400px){
+    section#profile-info-user .card-user{
+        height: 350px;
+        min-width: 310px;
+    }
+}

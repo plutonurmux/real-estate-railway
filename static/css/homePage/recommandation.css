@@ -1,0 +1,253 @@
+
+
+section#hero-rec{
+    position: relative;
+    top: 130px;
+}
+
+
+section#hero-rec .container{
+    width: var(--cont-size);
+    margin: 0 auto;
+}
+
+
+section#hero-rec .container .heading h2{
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    margin-bottom: .4em;
+}
+
+section#hero-rec .container .heading p{
+    font-family: var(--pri-font);
+    font-family:  var(--pri-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+}
+
+section#hero-rec .container .heading {
+    margin-bottom: 2em;
+}
+
+
+
+section#hero-rec .container .cities{
+    /* Display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+section#hero-rec .container .cities .card{
+    width: 410px;
+    height: 190px;
+    border-radius: var(--btn-brd-rd);
+    overflow: hidden;
+    border: 1px solid lightgray;
+    margin-bottom:1.7em;
+    background-color: rgb(204, 204, 204);
+}
+
+
+section#hero-rec .container .cities .card img{
+    width: 100%;
+    height: 190px;
+    z-index: 1;
+}
+
+
+
+
+section#hero-rec .container .cities .card h3{
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 140px;
+    color: #FFFFFF;
+}
+
+
+
+.black{
+    width: 360px;
+    height: 300px;
+}
+
+
+/*--------- Media Queries -----------*/
+
+
+@media screen and (max-width: 1400px) {  
+    section#hero-rec .container{
+        width: var(--cont-size);
+        margin: 0 auto;
+        width: 1150px;
+    }
+
+    section#hero-rec .container .cities .card{
+        width: 360px;
+        height: 190px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {  
+    section#hero-rec .container{
+        width: var(--cont-size);
+        margin: 0 auto;
+        width: 830px;
+    }
+
+    section#hero-rec .container .cities .card{
+        width: 395px;
+        height: 190px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {  
+    section#hero-rec .container{
+        width: var(--cont-size);
+        margin: 0 auto;
+        width: 830px;
+    }
+
+    section#hero-rec .container .cities .card{
+        width: 395px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 900px) {  
+    section#hero-rec .container{
+        width: var(--cont-size);
+        margin: 0 auto;
+        width: 700px;
+    }
+
+    section#hero-rec .container .cities .card{
+        width: 330px;
+        height: 210px;
+    }
+
+    section#hero-rec .container .cities .card img{
+        width: 100%;
+        height: 210px;
+        z-index: 1;
+    }
+
+    section#hero-rec .container .cities .card h3{
+        margin-top: 160px;
+    }
+    
+}
+
+
+@media screen and (max-width: 700px) {  
+    section#hero-rec .container{
+        width: var(--cont-size);
+        margin: 0 auto;
+        width: 500px;
+    }
+
+
+    section#hero-rec .container .cities a{
+        width: inherit;
+        width: 100%;
+        display: block;
+    }
+
+    section#hero-rec .container .cities .card{
+        width: 100%;
+        height: 210px;
+    }
+
+    section#hero-rec .container .cities .card img{
+        width: 100%;
+        height: 210px;
+        z-index: 1;
+    }
+
+    section#hero-rec .container .cities .card h3{
+        margin-top: 160px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {  
+    section#hero-rec .container{
+        width: var(--cont-size);
+        margin: 0 auto;
+        width: 450px;
+    }
+
+    section#hero-rec .container .cities a{
+        width: inherit;
+        width: 100%;
+        display: block;
+    }
+
+
+    section#hero-rec .container .cities .card{
+        width: 100%;
+        height: 210px;
+    }
+    section#hero-rec .container .cities .card img{
+        width: 100%;
+        height: 210px;
+        z-index: 1;
+    }
+    section#hero-rec .container .cities .card h3{
+        margin-top: 160px;
+    }
+}
+
+
+
+
+@media (max-width: 480px){
+    section#hero-rec .container{
+        width: var(--cont-size);
+        margin: 0 auto;
+        width: 340px;
+    }
+
+    section#hero-rec .container .cities a{
+        width: inherit;
+        width: 100%;
+        display: block;
+    }
+
+
+    section#hero-rec .container .cities .card{
+        width: 100%;
+        height: 190px;
+    }
+    section#hero-rec .container .cities .card h3{
+        margin-top: 140px;
+    }
+}
+
+
+

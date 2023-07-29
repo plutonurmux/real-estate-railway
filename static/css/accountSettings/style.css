@@ -1,0 +1,238 @@
+
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* --------- Edit INFORMATION Section ------------- */
+
+
+
+
+section#profile .edit-info-sec{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* remove it */
+    height: 500px;
+    /* margin-bottom: 25em; */
+}
+
+
+
+
+
+
+
+section#profile .edit-info-sec .buttons-links a button{
+    /* border: 1px solid red; */
+    padding: .8em 1.5em;
+    background-color: #E8E8E9;
+    border-radius: 5px;
+    border: none;
+    /* Font Style */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #828282;
+    cursor: pointer;
+}
+
+
+
+
+
+section#profile .edit-info-sec .buttons-links a:first-child button{
+    color: #685BFF;
+    margin-right: .5em;
+}
+
+
+
+/*---------- Form Section ------------*/
+
+
+
+
+form{
+    margin-top: 3em;
+}
+
+form label{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+
+form label p{
+    margin-bottom: .4em;
+    /* Font */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+
+
+
+form label .input-box{
+    padding: .8em 0;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    border: 1px solid #b7b7b775;
+}
+
+
+form label .input-box.has_error{
+    border: 1px solid red;
+}
+
+
+
+
+form label .input-box input , form label .input-box select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    position: relative;
+    left: 20px;
+    /* Font */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6C6C6C;
+}
+
+
+
+#phoneNumber-notify , #username-notify , #actPass-notify , #newPass-notify , #conf-notify{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #D42F2F;
+    margin-top: .5em;
+    /* remove it */
+}
+
+
+#addresseBox{
+    background-color: #E8E8E9;
+}
+
+
+
+.input-box.errorInput{
+    border: 1px solid #D42F2F;
+}
+
+
+button#pri-btn{
+    width: 165px;
+    height: 54px;
+    left: 379px;
+    top: 819px;
+    background: #4A3AFF;
+    border-radius: 5px;
+    border: none;
+    /* Font */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+
+@media (max-width:600px){
+    form label p{
+        margin-bottom: .4em;
+        /* Font */
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #333333;
+    }
+    form label .input-box input , form label .input-box select{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 90%;
+        position: relative;
+        left: 20px;
+        /* Font */
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        color: #6C6C6C;
+    }
+    button#pri-btn{
+        width: 165px;
+        height: 54px;
+        left: 379px;
+        top: 819px;
+        background: #4A3AFF;
+        border-radius: 5px;
+        color: #F2F2F2;
+        border: none;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+@media (max-width:460px){
+    section#profile .edit-info-sec .buttons-links a button{
+        padding: 1em 1em;
+        background-color: #E8E8E9;
+        border-radius: 5px;
+        border: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #828282;
+    }
+}
+
+
+
+button#pri-btn:disabled{
+    background: #4A3AFF;
+    opacity: 0.5;
+}
+
+
+
+i.fa-regular.fa-eye-slash , i.fa-regular.fa-eye{
+    position: absolute;
+    z-index: 1000;
+    /* display:none; */
+    padding: .1em;
+}

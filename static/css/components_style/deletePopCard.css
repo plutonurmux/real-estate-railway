@@ -1,0 +1,98 @@
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 245, 245, 0.62);
+    backdrop-filter: blur(15px);    
+    position: absolute;
+    top: 0;
+    z-index: 5000;
+}
+.overlay > .card{
+    width: 379px;
+    height: 315px;
+    background: white;
+    border-radius: 5px;
+    /* Position */
+    position: relative;
+    margin: 0 auto;
+    top: 30vh;
+    /* Display */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.overlay .card .container-card{
+    width: 85%;
+    height:75%;
+    /* Display */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}   
+.container-card img{
+    width: 60px;
+}
+.container-card h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #393838;
+}
+.container-card p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #393838;
+}
+.buttons button{
+    border: none;
+    padding:1em;
+    width: 136px;
+    margin: 0 .2em 0 .2em;
+    cursor: pointer;
+}
+
+button#cancel-btn{
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 3px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+}
+
+button#delete-btn{
+    border: 1px solid #de2d7b;
+    background: #de2d7b;
+    border-radius: 3px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+}
+@media (max-width:600px){
+    .overlay > .card {
+        width: 333px;
+    }
+    .container-card h3 {
+        font-size: 15px;
+    }
+    .container-card p {
+        font-size: 12px;
+    }
+    .buttons button {
+        width: 115px;
+    }
+}

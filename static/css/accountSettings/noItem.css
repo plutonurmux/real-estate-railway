@@ -1,0 +1,49 @@
+.no-listingHome-savedHome{
+    /* border: 1px solid; */
+    width: 100%;
+    /* Display */
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 100px;
+}
+
+.no-listingHome-savedHome h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BDBDBD;
+    margin-top: 1em;
+}
+
+.no-item-btn{
+    margin-top: 1.9em;
+    width: 180px !important;
+}
+
+.no-item-btn:hover{
+    transition: .1s ease-in;
+    width: 205px !important;
+}
+
+
+.image{
+    width: 190px;
+}
+
+
+@media (max-width:800px){
+    .image{
+        width: 176px;
+    }
+}
+
+
+
+@media (max-width:700px){
+    .image{
+        width: 156px;
+    }
+}

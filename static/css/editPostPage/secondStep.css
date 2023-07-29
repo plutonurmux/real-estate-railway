@@ -1,0 +1,197 @@
+
+
+
+/* -------- Form Two Step -------------*/
+
+
+.info-data-num label{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+
+.info-data-num{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid purple; */
+    margin-top: 1.8em;
+}
+
+
+.info-data-num label p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+
+
+
+.info-data-num label .input-box{
+    width: 89px;
+    height: 38px;
+    border: 2px solid #685BFF;
+    border-radius:3px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+
+
+
+.info-data-num label .input-box input{
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+
+
+/*  */
+
+
+.other-detail{
+    /* border: 1px solid red; */
+    margin-top: 3em;
+}
+
+.other-detail h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: .3em;
+}
+
+.other-detail p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+}
+
+
+.other-detail label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 21px;
+    color: #828282;
+}
+
+
+
+
+
+.checkboxes-cont{
+    /* border: 1px solid red; */
+    margin-top: 1em;
+    /* display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.checkboxes-cont  .info-check{
+    width: 105px;
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+.checkboxes-cont  .info-check{
+    width: 120px;
+    height: 50px;
+    padding: 0 .5em;
+    text-align: center;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius:40px;
+    /* Display */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-right: 0.3em;
+}
+
+
+div.has_selected.info-check{
+    background-color: #4A3AFF;
+    cursor: pointer;
+}
+
+
+div.has_selected.info-check label{
+    color: #F2F2F2 !important;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:800px){
+    .info-data-num{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        /* border: 2px solid purple; */
+        margin-bottom: 1.8em;
+    }
+    .info-data-num label .input-box{
+        width: 95px;
+        height: 38px;
+    }
+    .info-data-num label{
+        margin-bottom: 1em;
+    }
+    .info-data-num label p{
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .other-detail{
+        margin-top: 1.8em;
+    }
+    .other-detail h3{
+        font-size: 14px;
+    }
+    .checkboxes-cont .info-check {
+        width: 90px;
+        height: 42px;
+    }
+    .checkboxes-cont .info-check:nth-child(9){
+        width: 100px;
+        height: 42px;
+    }
+}
+
+
+.checkboxes-cont .info-check{
+    cursor: pointer;
+}

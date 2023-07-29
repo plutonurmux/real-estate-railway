@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dari</title>
+        <link rel="icon" href="/media/logo.png" type="image/icon type">
+        <!--  -->
+        <link rel="stylesheet" href="{% static 'css/root.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="{% static 'css/accountSettings/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/accountSettings/noItem.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/buttonPagination.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/deletePopCard.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navigation.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/listingCards.css' %}">
+        <link rel="stylesheet" href="{% static 'css/accountSettings/message.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/fotter.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navBar.css' %}">
+        <!-- Google Icons Link -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/6fa4ec11e9.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6fa4ec11e9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="app">
+            <navbar-sec background="rgb(248 248 248)" progress_bar="true"></navbar-sec>
+            <section id="profile">
+                <div class="container">
+                    <navigation-sec active_listing="true" active_saved="false" active_settings="false"></navigation-sec>
+                    <div style="margin-top: 70px;">
+                        <listing-card @delete-item="toggleOverlay" v-for="item in item_list" :username="item.username" :status="item.status" showdelete="true" edit="true" :image="item.images" :price="item.price" :title="item.title" :location="item.city" :category="item.category" :username="pagination_data.username" :saved_people="item.saved" :identifier="item.id"></listing-card>
+                        <div v-if="item_list.length == 0" class="no-listingHome-savedHome">
+                            <img src="/media/noListingUli.png" class="image" alt="">
+                            <h4>No listings Yet</h4>
+                            <a href="/home/add/post">
+                                <button id="btn-add-item" class="no-item-btn">
+                                    List your home ->
+                                </button>
+                            </a>
+                        </div>
+                        <div v-if="item_list.length == 1" style="width:100%;height:320px;border:none">
+                        </div>
+                    </div>
+                    <pagination-section v-if="item_list.length > 0" :next="pagination_data.hasNext" :prev="pagination_data.hasPrevious" :page="pagination_data.pageNumber" url_path="http://127.0.0.1:8000/account/listing/"></pagination-section>
+                </div>
+            </section>
+            <fotter-sec test="500"></fotter-sec>
+            <input type="hidden" name="yvalue" id="yvalueInput" value="">
+            <delte-popup v-if="showDeleteCard" :identifier="deletePostId" @close-overlay="toggleOverlay"></delte-popup>
+        </div>
+        <script>
+            var test_data = JSON.parse("{{data|escapejs}}")
+            var test_pag = JSON.parse("{{pagination_data|escapejs}}")
+        </script>
+        <!-- Import Our App -->
+        <script src="{% static 'js/myListing.js' %}"></script>
+        <!-- Import Our Component -->
+        <script src="{% static 'components/editProfilePage/editInfoForm.js' %}"></script>
+        <script src="{% static 'components/reusable_components/listingCard.js' %}"></script>
+        <script src="{% static 'components/reusable_components/paginationButton.js' %}"></script>
+        <!-- Import Our Component NavBar -->
+        <script src="{% static 'components/reusable_components/navBarComponent.js' %}"></script>
+        <!-- Import Our Component Message -->
+        <script src="{% static 'components/reusable_components/messageRequest.js' %}"></script>
+        <script src="{% static 'components/reusable_components/deletePopup.js' %}"></script>
+        <!-- Import Our Fotter Component -->
+        <script src="{% static 'components/reusable_components/fotter.js' %}"></script>
+        <!-- Import Our Component -->
+        <script src="{% static 'components/reusable_components/navigation.js' %}"></script>
+        <!-- Import Our Animations -->
+        <script src="{% static 'animations/navBar.js' %}"></script>
+        <!-- Mount Our App -->
+        <script>app.mount(".app")</script>
+    </body>
+</html>

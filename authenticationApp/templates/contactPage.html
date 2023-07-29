@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/contactPage.css' %}">
+        <link rel="stylesheet" href="{% static 'css/accountSettings/message.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/navBar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/components_style/fotter.css' %}">
+        <title>Dari</title>
+        <link rel="icon" href="/media/logo.png" type="image/icon type">
+        <!-- Google Icons Link -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <!-- Vue Js -->
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="app">
+            <navbar-sec background="rgb(248 248 248)" progress_bar="false"></navbar-sec>
+            <section id="contactSection">
+                <div class="container">
+                    <message-request v-if="showMessage" :message="messageValue" :status="messageStatus"></message-request>
+
+                    <div class="heading-post">
+                        <h1>Love to hear from you,<br> Get in touch</h1>
+                        <img src="{% static 'media/hand.png' %}" alt="">
+                    </div>
+
+                    {% csrf_token %}
+                    <contact-form :csrf_token_value="csrfValue" @show-msg="showMessageFunction"></contact-form>
+                </div>
+                <fotter-sec test="200"></fotter-sec>
+            </section>
+        </div>
+
+
+
+        <!-- Import Our App -->
+        <script src="{% static 'js/contactPage.js' %}"></script>
+        <!-- Import Our Component -->
+        <script src="{% static 'components/contactPage/contactForm.js' %}"></script>
+        <!-- Import Our NavBar Component -->
+        <script src="{% static 'components/reusable_components/navBarComponent.js' %}"></script>
+        <!-- Import Our Component Message -->
+        <script src="{% static 'components/reusable_components/messageRequest.js' %}"></script>
+        <!-- Import Our Fotter Component -->
+        <script src="{% static 'components/reusable_components/fotter.js' %}"></script>
+        <!-- Mount Our App -->
+        <script>app.mount(".app")</script>
+        <!-- Import Our Animations -->
+        <script src="{% static 'animations/navBar.js' %}"></script>
+    </body>
+</html>
+
+<style>
+    header{
+        background: #ffffff;
+    }
+</style>

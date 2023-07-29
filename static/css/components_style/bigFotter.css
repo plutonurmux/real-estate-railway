@@ -1,0 +1,416 @@
+
+
+
+
+
+section#fotter{
+    position: static;
+    left: 0;
+    bottom: 0;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 200px;
+    /* display */
+    display: flex;
+    align-items : center;
+    background-color: #27017D;
+}
+
+
+
+section#fotter .container{
+    /* border: 2px solid green; */
+    margin: 0 auto;
+    text-align: center;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    align-items : flex-start;
+    justify-content:space-between;
+    width: var(--cont-size);
+    height: 62%;
+}
+
+section#fotter .container .fotter-fst{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+section#fotter .container .fotter-sec{
+    border-top: 1px solid #4F4F4F;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 1.5em;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    color: #FAFAFA;
+}
+
+
+p#copyRight{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #E0E0E0;
+}
+
+
+
+section#fotter .container .fotter-fst #logo-sec{
+    /* border: 2px solid red; */
+    width: 260px;
+}
+
+
+section#fotter .container .fotter-fst #logo-sec p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    margin-top: 1em;
+    color: #FAFAFA;
+    margin-bottom: 2em;
+}
+
+
+section#fotter .container .fotter-fst #logo-sec .icons{
+    /* border: 1px solid red; */
+    width: 177px;
+    display: flex;
+    margin-top: 1em;
+    justify-content:space-between;
+}
+
+
+section#fotter .container .fotter-fst #logo-sec .icons i{
+    font-size: 23px;
+    color: #FAFAFA;
+}
+
+
+section#fotter .container .fotter-fst #logo-sec #logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+section#fotter .container .fotter-fst #logo-sec #logo img{
+    width: 50px;
+}
+
+
+section#fotter .container .fotter-fst #logo-sec #logo h3{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29.4627px;
+    line-height: 31px;
+    /* or 106% */
+    margin-left: 1em;
+    color: #FFFFFF;
+}
+
+
+
+/*  */
+
+
+
+
+section#fotter .container .fotter-fst .links-sec{
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+
+section#fotter .container .fotter-fst .links-sec ul{
+    /* border: 2px solid red; */
+    list-style: none;
+    text-align: left;
+    margin-left: 8em;
+    /* Font */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+
+section#fotter .container .fotter-fst .links-sec li{
+    margin-bottom: .8em;
+    cursor: pointer;
+}
+
+section#fotter .container .fotter-fst .links-sec li:hover{
+    position: relative;
+    transition: .2s ease-in-out;
+    transform : translateX(5px);
+    color: #eeeeee;
+}
+
+section#fotter .container .fotter-fst #logo-sec #logo img{
+    width: 40px;
+}
+
+
+
+section#fotter .container .fotter-fst .links-sec li i{
+    margin-right: .8em;
+}
+
+
+section#fotter .container .fotter-fst .links-sec ul .head-links{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E0E0E0;
+    margin-bottom: .7em;
+}
+
+
+section#fotter .container .fotter-fst .links-sec ul .head-links:hover{
+    position: relative;
+    transition: .2s ease-in-out;
+    transform : translateX(0px);
+    color: #eeeeee;
+}
+
+
+
+
+@media (max-width: 1400px){
+    section#fotter .container{
+        /* border: 2px solid green; */
+        width: 1100px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    section#fotter .container{
+        /* border: 2px solid green; */
+        width: 900px;
+    }
+    section#fotter .container .fotter-fst .links-sec ul{
+        margin-left: 4em;
+    }
+
+    
+    section#fotter .container .fotter-sec{
+        margin-top: 4em;
+    }
+}
+
+
+@media (max-width: 1000px){
+    section#fotter .container{
+        /* border: 2px solid red; */
+        width: 800px;
+    }
+    section#fotter .container .fotter-fst .links-sec ul{
+        margin-left: 4em;
+    }
+
+    
+    section#fotter .container .fotter-sec{
+        margin-top: 4em;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec #logo img{
+        width: 30px;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec #logo h3{
+        font-size: 20.4627px;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec p{
+        font-size: 12px;
+        margin-bottom: 1em;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec .icons{
+        margin-top: 2em;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec .icons i{
+        font-size: 17px;
+        color: #FAFAFA;
+    }
+
+    section#fotter .container .fotter-fst .links-sec li {
+        font-size:14px;
+    }
+}
+
+
+
+
+@media (max-width: 900px){
+    section#fotter .container{
+        /* border: 2px solid green; */
+        width: 700px;
+    }
+    section#fotter .container .fotter-fst .links-sec ul{
+        margin-left: 4em;
+    }
+    section#fotter .container .fotter-fst #logo-sec #logo img{
+        width: 30px;
+    }
+    section#fotter .container .fotter-fst #logo-sec #logo h3{
+        font-size: 20.4627px;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec p{
+        font-size: 12px;
+        margin-bottom: 1em;
+    }
+    section#fotter .container .fotter-fst #logo-sec .icons i{
+        font-size: 17px;
+        color: #FAFAFA;
+    }
+    section#fotter .container .fotter-fst .links-sec ul{
+        font-size: 13px;
+        margin-bottom: 0em;
+    }
+    section#fotter .container .fotter-fst .links-sec li {
+        margin-bottom: 0.4em;
+    }
+    section#fotter .container .fotter-sec{
+        /* border: 1px solid red; */
+        margin-top: 3em;
+    }
+    section#fotter .container .fotter-fst .links-sec{
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 900px){
+    section#fotter {
+        height: 700px;
+    }
+
+
+    section#fotter .container{
+        /* border: 2px solid green; */
+        width: 90%;
+    }
+
+    section#fotter .container .fotter-fst{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-sec{
+        align-items: center;
+        margin-bottom: 3.5em;
+    }
+
+    
+    section#fotter .container .fotter-fst #logo-sec p{
+        text-align: center;
+        margin-top: 1em;
+        color: #FAFAFA;
+        margin-bottom: 2em;
+    }
+
+    
+    section#fotter .container .fotter-fst #logo-sec .icons{
+        width: 177px;
+        display: flex;
+        margin-top: 1em;
+        justify-content:space-between;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec {
+        /* border: 2px solid red; */
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#fotter .container .fotter-fst #logo-sec p {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    section#fotter .container .fotter-fst .links-sec ul{
+        margin-left: 2.5em;
+        margin-bottom: 1.8em;
+        text-align:center;
+    }
+
+
+
+    section#fotter .container .fotter-sec{
+        margin-top: 3em;
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        padding-top: 1.5em;
+        font-size: 12px;
+    }
+
+    p#copyRight{
+        font-size: 11px;
+        text-align:left;
+    }
+
+    section#fotter .container .fotter-fst .links-sec ul{
+        margin-left:0;
+        margin-bottom:10em;
+        margin: 1em auto;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    section#fotter{
+        height: 1200px;
+    }
+
+
+    section#fotter .container{
+        /* border: 2px solid green; */
+        width: 300px;
+        height:70%;
+    }
+
+
+    section#fotter .container .fotter-fst .links-sec{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+a{
+    color: #BDBDBD;
+}

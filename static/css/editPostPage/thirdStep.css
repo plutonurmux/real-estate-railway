@@ -1,0 +1,98 @@
+
+
+
+
+/* -------- Form Three Step -------------*/
+
+
+
+.step-three{
+    /* border: 1px solid red; */
+    margin-top: 2em;
+}
+
+.step-three label{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction:column;
+}
+
+
+.step-three label p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+
+
+.step-three .input-box{
+    /* border: 1px solid red; */
+    height: 50px;
+    background: white;
+    border: 1px solid #B7B7B7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+
+
+.step-three .input-box input{
+    background:transparent;
+    width: 95%;
+    margin-left: 1em;
+    border: none;
+    outline: none;
+    /* Font */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #6C6C6C;
+}
+
+
+
+.step-three .input-box-textarea{
+    border: 1px solid red;
+    border: 1px solid red;
+    height: 150px;
+    background: #FAFAFA;
+    border: 1px solid #B7B7B7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    overflow: hidden;
+    /* display */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.step-three .input-box-textarea textarea{
+    height: 80%;
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+
+#notify-desc{
+    color: red;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-top: -.5em;
+    opacity:0;
+}

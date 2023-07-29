@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F8F8F8;
+}
+
+
+
+/*------------*/
+
+
+.login-card{
+    width: 450px;
+    height: 490px;
+    border: 1px solid #C0C0C0;
+    border-radius: var(--btn-brd-rd);
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    top: 230px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-card .container{
+    width: 350px;
+    height: 80%;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* Position */
+    position: relative;
+    top: 5px;
+}
+
+/*---*/
+
+.login-card .container .heading-card{
+    text-align: center;
+}
+
+
+.login-card .container .heading-card h1{
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--main-color);
+}
+
+
+
+.login-card .container .heading-card p{
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    /* or 18px */
+    text-align: center;
+    color: var(--pri-text-color);
+}
+
+/*---*/
+
+
+form{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* Position */
+    margin-top: 1em;
+    position: relative;
+    top: 10px;
+}
+
+form label{
+    margin-bottom: 1em;
+    margin-bottom: 1.3em;
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+form label .input-box{
+    border-radius: var(--btn-brd-rd);
+    background-color: #F2F2F2;
+    padding: 1em;
+    margin-top: .4em;
+    border: 2px solid #F2F2F2;
+    display: flex;
+}
+
+form label .input-box>span{
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+form label .input-box input{
+    background-color: transparent;
+    width: 95%;
+    outline: none;
+    border: none    ;
+}
+
+form label .input-box:hover{
+    border: 2px solid var(--main-color);
+    transition: .2s;
+}
+
+#btn-submit{
+    padding: 1.5em;
+    border-radius: var(--btn-brd-rd);
+    border: none;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+input#btn-submit:disabled{
+    background-color: #909090;
+}
+
+
+p.registerNotify{
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(53, 54, 56, 0.8);
+    margin-top: 1.3em;
+    text-align: center;
+}
+
+#register-link{
+    color: var(--main-color);
+}
+
+#register-link a{
+    text-decoration: none;
+}
+
+/*--- Media Queries For Login Card*/
+@media (max-width:1000px) {
+    .login-card{
+        position: relative;
+        top: 230px; 
+    }
+}
+
+
+
+
+@media (max-width:950px) {
+    .login-card{
+        position: relative;
+        top: 240px; 
+    }
+}
+
+
+@media (max-width:850px) {
+    .login-card{
+        position: relative;
+        top: 240px; 
+    }
+}
+
+
+@media (max-width:510px) {
+    .login-card .container .heading-card{
+        text-align: left;
+        align-self: flex-start;
+        position: relative;
+        left: -15px;
+    }
+    .login-card{
+        border: none;
+        width: 350px;
+        height: 470px;
+        position: relative;
+        top: 240px; 
+        background-color: transparent;
+    }
+    p.registerNotify{
+        text-align: left;
+    }
+    .heading-card{
+        margin-left: 18px;
+    }
+} 
+
+
+
+@media (max-width:370px) {
+    .login-card{
+        width: 300px;
+        height: 420px;
+        top: 50px;
+    }
+    .login-card .container {
+        width: 100%;
+    }
+    .login-card .container form{
+        width: 300px;
+    }
+    p.registerNotify{
+        font-size: 13px;
+    }
+}   
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
+
+.fa-eye{
+    cursor: pointer;
+}

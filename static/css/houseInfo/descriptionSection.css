@@ -1,0 +1,315 @@
+
+/* body{
+    background-color: white;
+} */
+
+
+body::-webkit-scrollbar{
+    width: 16px;
+    background-color: rgb(236, 236, 236);
+}
+body::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #606060;
+}
+body::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: hsl(0,0%,67%);
+}
+
+
+
+
+
+section#house-desc{
+    /* border: 2px solid green; */
+    position: relative;
+    top:320px;
+}
+
+
+
+section#house-desc .container{
+    /* border:2px solid red; */
+    width:var(--cont-size);
+    margin: 0 auto;
+}
+
+
+section#house-desc .container .description-text{
+    /* border : 2px solid green; */
+    width: 900px;
+}
+
+
+section#house-desc .container .description-text h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: .8em;
+}
+
+
+section#house-desc .container .description-text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #828282;
+    text-align: justify;
+}
+
+
+
+/*  */
+
+
+section#house-desc .container .other-opt-info{
+    /* border : 2px solid green; */
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    height:max-content;
+    margin-top: 2em;
+}
+
+
+
+.info-btn{
+    height: 60px;
+    padding: 0 2em;
+    border-radius:10px;
+    /* border: 1px solid #676767; */
+    background-color: #F2F2F2;
+    color: #676767;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /*  */
+    font-family: 'Poppins';
+    font-style: normal;
+    /* font-weight: 300; */
+    font-size: 16px;
+    line-height: 28px;
+    color: #828282;
+    cursor: pointer;
+}
+
+
+
+.info-btn svg{
+    margin-right : .5em;
+}
+
+.info-btn svg path{
+    fill: #828282;
+}
+
+
+
+.info-btn:hover{
+    background-color: #4A3AFF;
+    color: white;
+    transition: all 0.3s ease 0s;
+    box-shadow: -4px 16px 15px -4px rgb(53 36 249 / 10%);
+    
+}
+
+
+
+#selectedBox{
+    background-color: rgb(74, 58, 255);
+    color: white;
+    transition: all 0.3s ease 0s;
+    box-shadow: -4px 16px 15px -4px rgb(53 36 249 / 10%);
+}
+
+
+
+/*  */
+
+
+
+section#house-desc .container .table-info{
+    /* border:2px solid red; */
+    margin-top: 1.8em;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+section#house-desc .container .table-info .first-table{
+    width: 500px;
+    /* border: 1px solid pink; */
+}
+
+section#house-desc .container .table-info .first-table li{
+    border-bottom: 1px solid #E8E8E8;
+    width: 500px;
+    display: flex;
+    justify-content:space-between;
+    padding: 1em 0;
+}
+
+section#house-desc .container .table-info .first-table:nth-child(1){
+    width: 350px;
+}
+
+
+section#house-desc .container .table-info .first-table:nth-child(1) li{
+    width: 350px;
+    /* border: 1px solid red; */
+}
+
+
+section#house-desc .container .table-info .first-table li p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+}
+
+
+
+/* Media Queries */
+
+
+
+@media screen and (max-width: 1400px) {  
+    
+    section#house-desc .container{
+        /* border:2px solid red; */
+        width: 78%;
+        margin: 0 auto;
+    }
+    section#house-desc .container .description-text{
+        /* border : 2px solid green; */
+        width: 900px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) { 
+
+    section#house-desc .container{
+        width: 78%;
+        margin: 0 auto;
+    }
+    section#house-desc .container .description-text{
+        /* border : 2px solid green; */
+        width: 100%;
+    }
+    section#house-desc .container .other-opt-info{
+        align-items: flex-start;
+        width: 100%;
+    }
+    section#house-desc .container .table-info{
+        width: 100%;
+        flex-direction:column;
+    }
+    section#house-desc .container .table-info .first-table:nth-child(1){
+        width: 100%;
+    }
+    section#house-desc .container .table-info .first-table{
+        width: 100%;
+    }
+    section#house-desc .container .table-info .first-table li{
+        width: 100%;
+    }
+    section#house-desc .container .table-info .first-table:nth-child(1) li{
+        width: 100%;
+    }
+
+    
+    section#house-desc{
+        /* border : 2px solid red; */
+        position: relative;
+        top:290px;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {  
+    section#house-desc .container{
+        /* border:2px solid red; */
+        width:80%;
+        margin: 0 auto;
+    }
+    section#house-desc .container .description-text{
+        /* border : 2px solid green; */
+        width: 100%;
+    }
+    section#house-desc .container .other-opt-info{
+        align-items: flex-start;
+        width: 100%;
+    }
+    section#house-desc .container .table-info{
+        width: 100%;
+        flex-direction:column;
+        /* border: 1px solid red; */
+        margin-top: 4em;
+    }
+    section#house-desc .container .table-info .first-table{
+        width: 100%;
+    }
+    section#house-desc .container .table-info .first-table li{
+        width: 100%;
+    }
+
+    section#house-desc .container .table-info .first-table li p{
+        /* color: red; */
+        font-size: 14px;
+    }
+
+    .info-btn{
+        height:50px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {  
+    section#house-desc .container .description-text p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        color: #828282;
+        text-align: justify;
+    }
+
+    .info-btn {
+        height: 50px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {  
+    section#house-desc .container .table-info .first-table li p{
+        /* color: red; */
+        font-size: 12px;
+    }
+}

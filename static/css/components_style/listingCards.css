@@ -1,0 +1,202 @@
+
+
+
+
+
+
+.house-card{
+    height: 211px;
+    background: #ffffff;
+    border: 1px solid rgba(189, 189, 189, 0.77);
+    border-radius: 8px;
+    /* Display */
+    display: flex;
+    justify-content:space-between;
+    /* position */
+    margin-top:1.5em;
+    margin-bottom:1.5em;
+}
+
+
+#Desactive{
+    height: 211px;
+    background: rgb(254, 246, 233);
+}
+
+
+.house-card .left-cont{
+    border-right: 1px solid #cccccc;
+    width: 34%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.house-card .left-cont img{
+    width: 100%;
+}
+
+.house-card .left-cont img:hover{
+    cursor: pointer;
+}
+
+
+/* ---- */
+
+.house-card .right-cont{
+    /* border: 2px solid purple; */
+    width: 66%;
+    /* Display */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.house-card .right-cont .cont{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 80%;
+    /* display */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+
+
+.house-card .right-cont .cont .header-post .price-btn{
+    /* border: 1px solid rgb(8, 223, 33); */
+    /* display */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.house-card .right-cont .cont .header-post .price-btn h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #333333;
+}
+i.fa-solid{
+    color: #9f9f9f;
+    margin-right: 1em;
+    cursor: pointer;
+}
+i.fa-solid:last-child{
+    margin-right: 0em;
+}
+.house-card .right-cont .cont .header-post .post-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+}
+
+
+
+
+
+
+
+.house-card .right-cont .cont .bottom-post h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #A2A2A2;
+    padding-bottom: .7em;
+}
+
+
+
+.house-card .right-cont .cont .bottom-post .location-house{
+    display:flex;
+    align-items: flex-end;
+}
+
+
+.house-card .right-cont .cont .bottom-post .location-house h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+    padding-top: .7em;
+}
+
+.house-card .right-cont .cont .bottom-post .location-house img{
+    margin-right: 0.5em;
+}
+
+hr{
+    border: 1px solid #E8E8E8;
+}
+
+
+@media (max-width:650px){
+    .house-card{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        height: 393px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Desactive{
+        height: 393px;
+        background: rgb(254, 246, 233);
+    }
+    .house-card .left-cont {
+        width: 100%;
+        height: 55%;
+    }
+    .house-card .right-cont {
+        width: 100%;
+        height: 45%;
+    }
+}
+
+
+
+
+@media (max-width:455px){
+    .house-card {
+        /* border: 1px solid red; */
+        height: 365px;
+    }
+    .house-card .right-cont .cont {
+        /* border: 1px solid red; */
+        width: 83%;
+    }
+    .house-card .right-cont .cont .header-post .price-btn h2{
+        font-size: 17px;
+    }
+    .house-card .right-cont .cont .header-post .post-title{
+        font-size: 12px;
+    }
+    .house-card .right-cont .cont .bottom-post .location-house h3{
+        font-size: 12px;
+    }
+}
+
+
+
+svg{
+    font-size: 50px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.other-options{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,90 @@
+
+
+
+
+.message{
+    width: 450px;
+    margin: 0 auto;
+    border-radius: var(--btn-brd-rd);
+    padding: 1.3em 0;
+    position: relative;
+    margin : 0 auto;
+    top: 200px; 
+}
+
+.message .cont {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.message .cont p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--pri-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F2F2F2;
+}
+
+
+#msg-icn{
+    width: 30px;
+}
+
+
+.success{
+    background-color: #47C55D;
+}
+
+.process{
+    background-color: #DC9F40;
+}
+
+.error{
+    background-color: #FF6B6B;
+}
+
+
+
+
+/*--- Media Queries For Login Card*/
+@media (max-width:1000px) {
+    
+    .message{
+        top: 200px; 
+    }
+}
+
+
+
+@media (max-width:500px) {
+    
+    .message{
+        width: 350px;
+        margin: 0 auto;
+        border-radius: var(--btn-brd-rd);
+        padding: 1.3em 0;
+        position: relative;
+        margin : 0 auto;
+        top: 250px; 
+        
+    }
+
+    .message .cont p{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: var(--pri-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        color: #F2F2F2;
+    }
+}
